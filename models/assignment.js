@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import passportLocalMongoose from 'passport-local-mongoose'
 
 const assignmentSchema = mongoose.Schema({
+    id : String,
     name: String, 
     deadline : {type : Date},
     classId : String,

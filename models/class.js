@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import passportLocalMongoose from 'passport-local-mongoose'
 
 const classSchema = mongoose.Schema({
+    id : String,
     name: String,
     ownerId: String,
     ownerName: String,
