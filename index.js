@@ -17,6 +17,10 @@ app.use(cors());
 
 app.use('/home', home)
 
+app.get("/", (req, res) => {
+  res.send("Hello to E-Kaksha");
+})
+
 // const CONNECTION_URL = "mongodb+srv://admin-prakhar:cowardlycourage@cluster0.0c4sc.mongodb.net/Eclass";
 const PORT = process.env.PORT|| 5000;
 
